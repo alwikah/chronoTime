@@ -6,9 +6,15 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body onload="<%= onload_function %>">
 
-<%= yield %>
+<section id="chronoTimeExt">
+  <section id="chronoTimeContainer">
+    <h1>ChronoTime</h1>
+    <hr/>
+    <%= yield %>
+  </section>
+</section>
 
 </body>
 </html>

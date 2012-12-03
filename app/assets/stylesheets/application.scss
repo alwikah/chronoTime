@@ -1,0 +1,44 @@
+@import "base";
+
+body{
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+#chronoTimeExt{
+  width: 450px;
+  height: 100%;
+  border: 5px solid $borderColor;
+  border-radius: 15px;
+  background-color:$borderColor;
+
+  #chronoTimeContainer{
+    border:10px solid $borderColor;
+    border-radius: 17px;
+    background-color:white;
+
+    color: $borderColor;
+  }
+}
+
+hr{
+  color: $borderColor;
+  background-color: $borderColor;
+  height: 1px;
+  border: 0;
+}
+
+
+h1{
+  color: $borderColor;
+  text-align: center;
+  font-size: 2em;
+  line-height: 10px;
+  width: 100%;
+/*background-color: red;*/
+}
+
+.links{
+  padding-left: 10px;
+}

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  label: MyString
+  time: 2012-11-26 10:29:14
+  payment_type: MyString
+  payment_unit: 
+
+two:
+  label: MyString
+  time: 2012-11-26 10:29:14
+  payment_type: MyString
+  payment_unit: 

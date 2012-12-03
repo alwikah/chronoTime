@@ -1,0 +1,26 @@
+<%= stylesheet_link_tag 'itemsList' %>
+
+<%# Launch an existing timer %>
+<section id="itemsList">
+  <% unless @items.empty? %>
+      <div id="tableItemsList">
+        <div>
+          <% @items.each_with_index do |item, index| %>
+              <div class="<%= index.odd? ? "itemDiv" : "itemDiv odd" %>">
+                <div class="itemSubDiv itemLabel"><%= link_to item.label, timer_launch_item_path(item) %></div>
+                <div class="itemSubDiv itemTime"><%= item.secondes_to_string %></div>
+                <div class="itemSubDiv itemDelete"><%= link_to image_tag('delete.png', :width => '20px'), item_path(item), :method => :delete, :confirm=>'Voulez-vous vraiment supprimer ce timer ?' %></div>
+                </tr>
+          <% end %>
+          </div>
+        </div>
+  <% end %>
+  <div class="addTimerDiv">
+    <%= link_to image_tag('add.jpg', :width => '20px'), new_item_path %>
+  </div>
+</section>
+
+
+
+
+

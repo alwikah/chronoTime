@@ -1,0 +1,53 @@
+@import "base";
+
+#itemsList{
+  div#tableItemsList{
+    width:100%;
+    div{
+
+      width:100%;
+      .odd{
+        background-color: #cffcff;
+      }
+
+      div.itemDiv{
+        display: table;
+
+        div.itemSubDiv{
+          display:table-cell;
+        }
+
+        div.itemLabel{
+          padding-left:20px;
+          width:30%;
+          a:hover{
+            background-color: $borderColor;
+            color:white;
+          }
+        }
+
+        div.itemTime{
+          width: 60px;
+        }
+
+        div.itemDelete{
+          margin-left:3px;
+          width: 25px;
+        }
+
+        // links to each timer (name of the timer)
+      }
+    }
+
+  }
+
+  div.addTimerDiv{
+    margin-top: 20px;
+  }
+}
+
+
+a{
+  text-decoration: none;
+  color: $borderColor;
+}

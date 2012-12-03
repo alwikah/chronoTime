@@ -1,0 +1,28 @@
+<%
+   timer ||= nil;
+%>
+
+<br />
+
+<div id="timerDiv">
+  <label id="timer_display"></label>
+</div>
+<div class="menuControlsExt">
+  <div class="tableDisplay menuControls">
+    <div class="tableCellDisplay">
+      <%#= link_to_function "Start", 'startTimer(this)' %>
+      <%= image_tag('start.png', width: '30px', :onclick => 'startTimer(this)') %>
+    </div>
+
+    <div class="tableCellDisplay">
+      <%= image_tag('stop.jpg', width: '30px', :onclick => 'resetTimer()') %>
+    </div>
+  </div>
+
+<%= link_to_function '', 'getPreviousTimeBack()', id: 'previousTime', style: 'hidden' %>
+</div>
+
+<%= form_for timer do %>
+    <%= hidden_field_tag 'time', 'time' %>
+    <%= submit_tag 'Enregistrer' %>
+<% end %>

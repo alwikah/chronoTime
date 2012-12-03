@@ -1,0 +1,12 @@
+<%= stylesheet_link_tag 'timer_launch' %>
+
+<h2><%= @timer.label %></h2>
+
+<%= render :partial => 'items/chrono', locals: {timer: @timer} %>
+
+<hr/>
+
+<section class="totalRecordedTimeSection">
+    <h3>Temps total enregistré : <%= @timer.secondes_to_string %></h3>
+    <div class="links"><%= link_to 'Retour', root_path %></div>
+</section>
